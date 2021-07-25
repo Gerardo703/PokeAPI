@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <title>Pokemon API</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand">POKEMON API</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                </ul>
+                                <form id="formulario" class="d-flex">
+                                  <input type="text" id="pokemon" class="form-control me-2" type="search" placeholder="Nombre Pokemón" aria-label="Search">
+                                  <button class="btn btn-outline-light" type="submit">Buscar</button>
+                                </form>
+                              </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+    <div class="container">
+        <h1 class="text-center mt-2">BUSCA POKEMONES</h1>
+
+        <div class="row mt-3 justify-content-center">
+            <!-- <div class="col col-12 col-sm-6 col-md-6">
+                <form action="#"  id="formulario" method="POST"  >
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="pokemon" name="pokemon" placeholder="Escriba nombre del Pokemón">
+                        <input type="submit" class="form-control btn btn-dark mt-3" value="Obtener Pokemón" />
+                    </div>
+                </form>
+            </div> -->
+
+            <div class="col col-12 col-sm-12 col-md-6">
+                <div id="resultado" class="text-center">
+                    <p class="text-center">Agrega el nombre del pokemón, el resultado se muestra aquí</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="page-footer black mt-3">
+            <div class="container-fluid text-white text-center p-2 bg-dark">
+            <div class="row">
+                <div class=" col-12 col-sm-6">
+                <h5 class="white-text">POKEMON API</h5>
+                <p>Apliación utilizando API Pokemón</p>
+                <p>&copy; 2021 Gerardo Vega</p>
+                </div>
+                <div class="col-12 col-sm-6">
+                <h5>Social Media</h5>
+                    <p><img class="text-white" src="./img/facebook (2).svg"></img> <a id="facebook" class="text-white" href="#">Facebook</a></p>
+                    <p><img class="text-white" src="./img/instagram.svg"></img> <a id="instagram" class="text-white" href="#">Instagram</a></p>
+                    <p><img class="text-white" src="./img/twitter.svg"> <a  id="twitter" class="text-white" href="#">Twitter</a></p>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!--Footer End-->
+
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>
