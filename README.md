@@ -1,6 +1,9 @@
 # PokeAPI 
 
-### https://pokeapi.co/api/v2/pokemon/${IDorNAME}
+### https://pokeapi.co/api/v2/pokemon/{1/pikachu}
+La API para buscar un pokémon, puede ser mediante id o nombre, en mi caso utilicé nombre
+
+### https://pokeapi.co/docs/v2 (Documentación)
 
 # Proyecto consumiento API de Pokémon
 Proyecto en el cual se consume una Api, la cual obtiene los personajes de la serie animada Pokemón.
