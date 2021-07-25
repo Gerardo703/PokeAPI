@@ -1,7 +1,7 @@
 # PokeAPI 
 
 ### https://pokeapi.co/api/v2/pokemon/{1/pikachu}
-La API para buscar un pokémon, puede ser mediante id o nombre, en mi caso utilicé nombre
+Para buscar un pokémon, puede ser mediante id o nombre, en mi caso utilicé nombre
 
 ### https://pokeapi.co/docs/v2 (Documentación)
 
