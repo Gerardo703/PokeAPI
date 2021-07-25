@@ -1,6 +1,6 @@
 # PokeAPI 
 
-### https://pokeapi.co/api/v2/pokemon/${IDorName}
+### https://pokeapi.co/api/v2/pokemon/${IDorNAME}
 
 # Proyecto consumiento API de Pokemón
 Proyecto en el cual se consume una Api, la cual obtiene los personajes de la serie animada Pokemón.
