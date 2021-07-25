@@ -7,7 +7,8 @@ Proyecto en el cual se consume una Api, la cual obtiene los personajes de la ser
 
 # Tecnologías utilizadas
 
-<img src="https://img.shields.io/badge/-Javascript-black?style=plastic&logo=javascript"> <img src="https://img.shields.io/badge/-html-black?style=plastic&logo=html5"> <img src="https://img.shields.io/badge/-css-black?style=plastic&logo=css3">
+<img src="https://img.shields.io/badge/-Javascript-black?style=plastic&logo=javascript"> <img src="https://img.shields.io/badge/-html-black?style=plastic&logo=html5"> <img src="https://img.shields.io/badge/-bootstrap-black?style=plastic&logo=bootstrap"> <img src="https://img.shields.io/badge/-css-black?style=plastic&logo=css3">
+
 
 # Petición
 
