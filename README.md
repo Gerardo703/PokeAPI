@@ -1,6 +1,6 @@
 # PokeAPI 
 
-### https://pokeapi.co/docs/v2#characteristics
+### https://pokeapi.co/api/v2/berry/{IdorName}/
 
 # Proyecto consumiento POKEAPI [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Proyecto en el cual se consume una Api, la cual obtiene los personajes de la serie animada Pokemón.
