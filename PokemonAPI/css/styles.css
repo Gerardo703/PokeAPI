@@ -60,4 +60,12 @@
     } 
   }
 
+  .logo { 
+    filter: drop-shadow(5px 5px 15px rgb(192, 192, 192)); 
+  }
+
+  .card{
+    box-shadow: 5px 5px 15px rgb(192, 192, 192);
+    margin-bottom: 15px;
+  }
  

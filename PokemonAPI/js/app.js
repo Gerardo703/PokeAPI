@@ -62,10 +62,10 @@ function consultarApi(pokemon){
 };
 
 function mostrarDatos(datos){
-    const{ abilities, id, weight, types, name, sprites} = datos;
+    const{ abilities, id, base_experience, types, name, sprites, stats} = datos;
 
     const datosPokemon = document.createElement('div');
-    datosPokemon.classList.add('card', 'rounded-3', 'border', 'border-5');
+    datosPokemon.classList.add('card', 'rounded-3', 'border', 'border-5', );
 
     datosPokemon.innerHTML = `
         <div class="bg-dark text-white card-header">
@@ -74,13 +74,34 @@ function mostrarDatos(datos){
         <div class="card-body">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <img  class="img-fluid " width="150" height="150" src="${sprites.other.dream_world.front_default}"></img>
+                    <img  class="img-fluid logo" width="150" height="150" src="${sprites.other.dream_world.front_default}"></img>
+                    <h5 class=" card-subtitle rounded mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>  
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Weight: ${weight}Kg</h5>
-                    <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Abilitie #1 : ${abilities[0].ability.name}</h5>
-                    <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Abilitie #2 : ${abilities[1].ability.name}</h5>
-                    <h5 class=" card-subtitle mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>  
+                    <div class="row my-4 justify-content-center">
+                        <h5 class=" card-subtitle rounded mb-2 mt-1 text-uppercase text-white bg-dark">STATS</h5> 
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">XP: ${base_experience}</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">${stats[0].stat.name}: ${stats[0].base_stat}</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">ATK: ${stats[1].base_stat}</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">DFS: ${stats[2].base_stat}</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">SATK: ${stats[3].base_stat}</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">SDFS: ${stats[4].base_stat}</h6>
+                        </div>
+                        <div class="col-4">
+                            <h6 class=" card-subtitle mt-2 text-uppercase text-dark">SPD: ${stats[5].base_stat}</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
