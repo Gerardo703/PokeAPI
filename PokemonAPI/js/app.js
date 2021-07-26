@@ -42,8 +42,29 @@ function mostrarError(mensaje){
     };
 };
 
+// function consultarApi2(){
+//     const url2 = 'https://pokeapi.co/api/v2/pokemon';
+
+//     // Mostramos spinner
+//     Spinner();
+
+//     fetch(url2)
+//         .then(response => response.json())
+//         .then(json => {
+//             console.log(json.results);
+
+//              // Limpiar HTML previo
+//             limpiarHtml();
+
+//             mostrarListado(json.results);
+//         });
+// };
+
+// Busca un pokémon por su nombre o numero
+
 function consultarApi(pokemon){
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+
 
     //Muestra el spinner de carga
     Spinner();
