@@ -55,12 +55,6 @@ function consultarApi(pokemon){
 
             // Limpiar HTML previo
             limpiarHtml();
-
-            // verificamos si el código del error es 404
-            if(datos.status === "404"){
-                mostrarError('No se encuentra la ciudad solicitada');
-                return;
-            };
             
             // Imprimimos la respuesta en el HTML
             mostrarDatos(datos);
