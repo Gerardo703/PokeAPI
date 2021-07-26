@@ -66,7 +66,7 @@ function mostrarDatos(datos){
 
     const datosPokemon = document.createElement('div');
     datosPokemon.classList.add('card', 'rounded-3', 'border', 'border-5');
-    
+
     datosPokemon.innerHTML = `
         <div class="bg-dark text-white card-header">
            POKEMÓN -  #${id} <h6 class="card-subtitle mt-2 text-uppercase">${name}</h6>
@@ -77,7 +77,7 @@ function mostrarDatos(datos){
                     <img  class="img-fluid " width="150" height="150" src="${sprites.other.dream_world.front_default}"></img>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Weight: ${weight}</h5>
+                    <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Weight: ${weight}Kg</h5>
                     <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Abilitie #1 : ${abilities[0].ability.name}</h5>
                     <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Abilitie #2 : ${abilities[1].ability.name}</h5>
                     <h5 class=" card-subtitle mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>  
