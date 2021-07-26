@@ -72,9 +72,9 @@ function mostrarDatos(datos){
            POKEMÓN -  #${id} <h6 class="card-subtitle mt-2 text-uppercase">${name}</h6>
         </div>
         <div class="card-body">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <img  class="img-fluid logo mb-2" width="150" height="150" src="${sprites.other.dream_world.front_default}"></img>
+                    <img  class="img-fluid logo mb-2"  src="${sprites.other.dream_world.front_default}"></img>
                     <h5 class=" card-subtitle rounded mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>  
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">

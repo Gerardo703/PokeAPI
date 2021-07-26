@@ -61,7 +61,9 @@
   }
 
   .logo { 
-    filter: drop-shadow(5px 5px 15px rgb(192, 192, 192)); 
+    filter: drop-shadow(5px 5px 15px rgb(192, 192, 192));
+    max-width: 152px;
+    height: 200px;
   }
 
   .card{
