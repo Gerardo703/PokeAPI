@@ -79,8 +79,7 @@ function mostrarDatos(datos){
                     <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Weight: ${weight}</h5>
                     <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Abilitie #1 : ${abilities[0].ability.name}</h5>
                     <h5 class=" card-subtitle mt-2 text-uppercase text-dark">Abilitie #2 : ${abilities[1].ability.name}</h5>
-                    <h5 class=" card-subtitle mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>
-                    
+                    <h5 class=" card-subtitle mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>  
                 </div>
             </div>
         </div>
