@@ -66,6 +66,7 @@ function mostrarDatos(datos){
 
     const datosPokemon = document.createElement('div');
     datosPokemon.classList.add('card', 'rounded-3', 'border', 'border-5');
+    
     datosPokemon.innerHTML = `
         <div class="bg-dark text-white card-header">
            POKEMÓN -  #${id} <h6 class="card-subtitle mt-2 text-uppercase">${name}</h6>
