@@ -61,13 +61,13 @@
   }
 
   .logo { 
-    filter: drop-shadow(5px 5px 15px rgb(192, 192, 192));
+    filter: drop-shadow(5px 5px 15px rgb(160, 160, 160));
     max-width: 152px;
     height: 200px;
   }
 
   .card{
-    box-shadow: 5px 5px 15px rgb(192, 192, 192);
+    box-shadow: 5px 5px 15px rgb(160, 160, 160);
     margin-bottom: 15px;
   }
  
