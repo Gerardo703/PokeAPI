@@ -6,7 +6,6 @@ const resultado = document.querySelector('#resultado');
 
 window.addEventListener('load', () => {
     formulario.addEventListener('submit', buscarPokemon);
-    
 });
 
 function buscarPokemon(e){
@@ -62,6 +61,8 @@ function consultarApi(pokemon){
             mostrarDatos(datos);
         })
 };
+
+
 
 function mostrarDatos(datos){
     const{id, base_experience, types, name, sprites, stats} = datos;
