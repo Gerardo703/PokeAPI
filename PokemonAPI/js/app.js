@@ -77,11 +77,11 @@ function mostrarDatos(datos){
         </div>
         <div class="card-body ">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <img  class="img-fluid logo mb-2"  src="${sprites.other.dream_world.front_default}"></img>
                     <h5 class=" card-subtitle rounded mt-2 text-uppercase text-white bg-dark">Type: ${types[0].type.name}</h5>  
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <h5 class=" card-subtitle rounded mt-1 text-uppercase text-white bg-dark">STATS</h5>
                     <div class="row my-3 justify-content-center">
                         <div class="col-5">
