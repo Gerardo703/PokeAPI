@@ -63,7 +63,7 @@
   .logo { 
     filter: drop-shadow(5px 5px 15px rgb(160, 160, 160));
     max-width: 200px;
-    height: 200px;
+    height: 210px;
   }
 
   .card{
