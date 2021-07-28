@@ -71,5 +71,8 @@
     margin-bottom: 15px;
   }
 
+  #pokemon{
+    text-transform: lowercase;
+  }
   
  

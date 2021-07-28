@@ -13,9 +13,10 @@ function buscarPokemon(e){
 
     //Validar Formulario
     const pokemon = document.querySelector('#pokemon').value; //Obtengo el valor del Input
-    
-    if( pokemon === '' ){
-        mostrarError('Todos los campos son obligatorios');
+    const pattern = new RegExp('^[a-z]+$');
+
+    if( pokemon === ''){
+        mostrarError('Todos los campos son Obligatorios');
         return;
     }
 
