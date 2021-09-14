@@ -69,6 +69,7 @@ async function consultarApi(pokemon){
         setTimeout(() => {
             location.reload();
         }, 2000);
+        
     }
 
     
