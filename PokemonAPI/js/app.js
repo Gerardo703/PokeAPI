@@ -13,9 +13,9 @@ function buscarPokemon(e){
 
     //Validar Formulario
     const pokemon = document.querySelector('#pokemon').value; //Obtengo el valor del Input
-    const pattern = new RegExp('^[a-z]+$');
 
-    if( pokemon === ''){
+    
+    if( pokemon === '' ){
         mostrarError('Todos los campos son Obligatorios');
         return;
     }
@@ -44,23 +44,51 @@ function mostrarError(mensaje){
 };
 
 // Busca un pokémon por su nombre o numero
-function consultarApi(pokemon){
+async function consultarApi(pokemon){
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
 
-    //Muestra el spinner de carga
     Spinner();
 
-    fetch(url)
-        .then( resultado => resultado.json())
-        .then( datos => {
-            console.log(datos);
+    try {
+        const respuesta = await fetch( url );
 
-            // Limpiar HTML previo
-            limpiarHtml();
-            
-            // Imprimimos la respuesta en el HTML
-            mostrarDatos(datos);
-        })
+        const datos = await respuesta.json();
+        console.log(datos);
+
+        //Limpiar HTML previo
+        limpiarHtml();
+
+        mostrarDatos(datos);
+
+        formulario.reset();
+
+    } catch (error) {
+        mostrarError('No existe el pokémon solicitado');
+        formulario.reset();
+        
+        setTimeout(() => {
+            location.reload();
+        }, 2000);
+    }
+
+    
+
+    // fetch( url )
+    //     .then( resultado => resultado.json())
+    //     .then( datos => {
+    //         console.log(datos);
+
+    //         // Limpiar HTML previo
+    //         limpiarHtml();
+
+    //         if(!datos){
+    //             mostrarError('Nooooo');
+    //         }
+        
+
+    //         // Imprimimos la respuesta en el HTML
+    //         mostrarDatos(datos);
+    //     });
 };
 
 
